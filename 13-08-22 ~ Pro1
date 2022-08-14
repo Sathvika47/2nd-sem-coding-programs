@@ -1,0 +1,25 @@
+// C program to read n numbers and print a alphabet pattern
+#include <stdio.h>
+
+int main() {
+    int i,j,n;
+    scanf("%d",&n);
+    char ch='A',ch1='a';
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("%c%c\t",ch,ch1);
+            ch++;
+            ch1++;
+        }
+       printf("\n");
+    }
+    return 0;
+}
+
+Output:
+3
+Aa
+Bb Cc
+Dd Ee Ff
