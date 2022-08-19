@@ -1,0 +1,23 @@
+//C program to print whether all the unique or duplicate
+#include <stdio.h>
+
+int main()
+{
+     int a[]={7,66,5,44,3,1,9},flag=0,i;
+     for(i=0;i<7;i++)
+     {
+         if(a[0]==a[i+1])
+         {
+             flag=1;
+             break;
+         }
+     }
+     if(flag==0)
+     printf("Unique");
+     else
+     printf("Duplicate");
+    return 0;
+}
+
+Output:
+Unique
