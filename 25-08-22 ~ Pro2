@@ -1,0 +1,20 @@
+// C program to read a string and convert alternative character into upper case
+#include <stdio.h>
+
+int main()
+{
+    char str[50];
+    scanf("%s",str);
+    int i;
+    for(i=0;str[i]!='\0';i++)
+    {
+        if(i%2==1)
+        str[i]=str[i]-32;
+    }
+    puts(str);
+    return 0;
+}
+
+Output:
+sathvika
+sAtHvIkA
