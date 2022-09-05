@@ -1,0 +1,23 @@
+// C program to read s and e values and print numbers from s to e without using for loop
+
+#include <stdio.h>
+int main() {
+    int s,e;
+    printf("enter s,e:");
+    scanf("%d %d",&s,&e);
+    display(s,e);
+    return 0;
+}
+void display(int start,int end)
+{
+    if(start>end)
+    return;
+    else
+    printf("%d\t",start);
+    display(start+1,end);
+}
+
+Output:
+enter s,e:4
+10
+4	5	6	7	8	9	10	
