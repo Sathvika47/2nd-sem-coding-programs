@@ -1,0 +1,30 @@
+// C program to read and print array elements without using for loop
+
+#include <stdio.h>
+int main() {
+    int n,i,a[10];
+    printf("enter array size:");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    int len=n-1;
+    display(a,0,len);
+    return 0;
+}
+void display(int a[],int start,int end)
+{
+    if(start>end)
+    return;
+    else
+    printf("%d\t",a[start]);
+    display(a,start+1,end);
+}
+
+Output:
+enter array size:5
+11
+22
+33
+44
+55
+11  22  33  44  55
