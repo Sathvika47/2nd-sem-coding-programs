@@ -1,0 +1,25 @@
+// C program to print sum of n numbers using pointers
+
+#include <stdio.h>
+int main() {
+   int a[10],*p=a,n,i=0,sum=0;
+   scanf("%d",&n);
+   for(i=0;i<n;i++)
+   {
+    scanf("%d",&(*(p+i)));
+   }
+   for(i=0;i<n;i++)
+   {
+    sum=sum+*(p+i);
+   }
+   printf("%d",sum);
+    return 0;
+}
+
+Output:
+4
+1
+4
+7
+2
+14
